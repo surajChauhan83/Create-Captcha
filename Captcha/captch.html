@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha</title>
+    <script type="text/javaScript" src="captc.js"></script>
+</head>
+<body style="background-color:whitesmoke;"onload="captchaGenrator()">
+    <center style="background-color: indianred;">
+
+        <h1>Captcha - Are you a Human?</h1>
+
+        Captcha* :<input type="text" id="createCaptcha" disabled>
+        <input type="button" id="refresh" value="Refresh" onclick="captchaGenrator()">
+
+        <br>
+        <br>
+        <input type ="text" id="inputCaptcha">
+        <br><br>
+        <input type="button" id="checkButton" value="Check" onclick="alert(isvalid())"></input>
+
+
+    </center>
+</body>
+</html>
