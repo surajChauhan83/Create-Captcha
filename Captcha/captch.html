@@ -5,10 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Captcha</title>
+    <style>
+      .center{
+        background-color: indianred;
+        text-align: center;
+        border: 3px solid orangered;
+      }
+    </style>
+    
     <script type="text/javaScript" src="captc.js"></script>
 </head>
-<body style="background-color:whitesmoke;"onload="captchaGenrator()">
-    <center style="background-color: indianred;">
+<body  onload="captchaGenrator()">
+   <div class = "center" >
 
         <h1>Captcha - Are you a Human?</h1>
 
@@ -20,8 +28,10 @@
         <input type ="text" id="inputCaptcha">
         <br><br>
         <input type="button" id="checkButton" value="Check" onclick="alert(isvalid())"></input>
+        <br><br>
+    </div>
+    
 
-
-    </center>
+ 
 </body>
 </html>
